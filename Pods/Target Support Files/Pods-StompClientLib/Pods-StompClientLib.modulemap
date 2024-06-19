@@ -1,0 +1,6 @@
+framework module Pods_StompClientLib {
+  umbrella header "Pods-StompClientLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

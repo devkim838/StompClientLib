@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "StompClientLib",
     platforms: [
-        .iOS(.v10)
+        .iOS(.v13) // 배포 타겟 버전을 여기도 맞춰줍니다.
     ],
     products: [
         .library(
@@ -15,6 +15,9 @@ let package = Package(
     targets: [
         .target(
             name: "StompClientLib",
-            path: "StompClientLib/Classes")
+            dependencies: [],
+            path: "StompClientLib/Classes",
+            exclude: ["../Pods"] // Pods 폴더 제외
+        )
     ]
 )
