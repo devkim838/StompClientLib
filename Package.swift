@@ -21,12 +21,7 @@ let package = Package(
         .target(
             name: "SocketRocket",
             path: "SocketRocket",
-            exclude: ["Info.plist"],
-            sources: [
-                "Internal",
-                "Public",
-                "Vendor"
-            ]
+            exclude: ["Info.plist"]
         )
     ]
 )
