@@ -15,13 +15,6 @@ let package = Package(
     targets: [
         .target(
             name: "StompClientLib",
-            dependencies: ["SocketRocket"],
-            path: "StompClientLib/Classes"
-        ),
-        .target(
-            name: "SocketRocket",
-            path: "SocketRocket",
-            exclude: ["Info.plist"]
-        )
+            path: "StompClientLib/Classes")
     ]
 )
